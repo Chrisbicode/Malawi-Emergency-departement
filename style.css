@@ -125,10 +125,10 @@ h3.sub{font-family:'Sora';font-size:21px;font-weight:700;margin:34px 0 12px;colo
 .tc-head{position:sticky;top:92px}
 .tc-head .title{margin-bottom:0;font-size:clamp(24px,3vw,33px);max-width:none;overflow-wrap:break-word;hyphens:auto}
 .tc .prose p:first-child{margin-top:0}
-/* Umgekehrt: Überschrift rechts, Text links */
 .tc.rev{grid-template-columns:1fr 300px}
 .tc.rev .tc-head{order:2}
-@media(max-width:860px){ .tc{grid-template-columns:1fr;gap:14px} .tc-head{position:static} .tc.rev .tc-head{order:0} }
+/* Nur im mobilen Design (dort wo auch das Hamburger-Menü kommt): Überschrift oben, gestapelt */
+@media(max-width:900px){ .tc{grid-template-columns:1fr;gap:14px} .tc-head{position:static} .tc.rev .tc-head{order:0} }
 
 /* Einheitlicher, ruhiger Ton für getönte Abschnitte */
 .alt,.band-peach,.band-green,.band-rose{background:#faf5ec}
