@@ -348,3 +348,9 @@ footer .brand .orb{box-shadow:none}
   .facts-col .fact .num{min-width:0;text-align:left;font-size:38px}
   .preview-grid .pv-m{display:block}
 }
+
+/* Hamburger-Icon als gefüllte Balken (bulletproof, keine Linien/currentColor) */
+.menu-toggle .mbar,.menu-toggle .mbar::before,.menu-toggle .mbar::after{content:"";display:block;width:24px;height:3px;border-radius:2px;background:#16211f}
+.menu-toggle .mbar{position:relative}
+.menu-toggle .mbar::before{position:absolute;left:0;top:-8px}
+.menu-toggle .mbar::after{position:absolute;left:0;top:8px}
